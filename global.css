@@ -1,0 +1,21 @@
+body {
+	text-align:center;
+}
+
+.content {
+	margin:0 auto;
+	max-width:500px;
+}
+
+.logo {
+	width:100%;
+	height:auto;
+}
+
+.shows {
+	width:100%;
+}
+
+.shows th, .shows td {
+	text-align:left;
+}
