@@ -106,6 +106,8 @@
 				// This event will only be triggered if setting the autoplay attribute to true works.             
 				$(audio).on('play', function() {
 					AUTOPLAY = true; // Set the global flag to true, indicating we have support.
+					
+					console.log('AUTOPLAY play', AUTOPLAY);
 				});
 				
 				audio.src = src; // Set the audio objects src to the value of the src variable.
@@ -113,6 +115,8 @@
 				console.log('[AUTOPLAY-ERROR]', e);
 				// This means we were unsuccessful - this browser doesn't support the autoplay attribute.
 			}
+			
+			console.log('AUTOPLAY before ', AUTOPLAY);
 			
 			$(function() {
 				var playlist = [
@@ -125,10 +129,12 @@
 				var BV = new $.BigVideo();
 				BV.init();
 				
-				if (!AUTOPLAY) {
-					BV.show('/img/background.jpg');
-				} else {
+				console.log('AUTOPLAY now', AUTOPLAY);
+				
+				if (AUTOPLAY) {
 					BV.show(playlist.sort(function() { return 0.5 - Math.random() }), { ambient:true });
+				} else {
+					BV.show('/img/background.jpg');
 				}
 			});
 		</script>
