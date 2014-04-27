@@ -55,5 +55,5 @@ var App = (function()  {
 	var construct = (function(ev) {		
 		$(document).ready(onAppReady);
 		$(window).ready(onAppLoaded);
-	}); 
+	})(); 
 })();
