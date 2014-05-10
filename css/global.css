@@ -10,6 +10,9 @@ body {
 	font-family:'Helvetica Neue', Arial, sans-serif;
 	font-size:12px;
 	color:#111;
+	background-image:url(../img/pattern.png);
+	background-repeat:repeat;
+	background-position:center center;
 	background-color:#D9D9D9;
 }
 
@@ -31,7 +34,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5 {
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Amatic SC', sans-serif;
 	font-size:300%;
 }
 
