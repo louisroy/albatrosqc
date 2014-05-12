@@ -24,7 +24,7 @@ iframe[seamless]{
 }
 
 a {
-	color:#FF0D0D;
+	color:#B89F77;
 	font-weight:bold;
 	text-decoration:none;
 }
@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5 {
 	background-image:url(../img/pattern-dark.png);
 	background-repeat:repeat;
 	background-position:center center;
-	background-color:rgba(0, 0, 0, 0.80);
+	background-color:rgba(0, 0, 0, 0.75);
 	z-index:1;
 	top:0;
 	left:0;
