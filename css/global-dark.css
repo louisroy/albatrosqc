@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5 {
 	background-image:url(../img/pattern-dark.png);
 	background-repeat:repeat;
 	background-position:center center;
-	background-color:rgba(0, 0, 0, 0.85);
+	background-color:rgba(0, 0, 0, 0.80);
 	z-index:1;
 	top:0;
 	left:0;
