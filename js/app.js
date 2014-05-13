@@ -55,7 +55,7 @@ var App = (function()  {
 		if (autoplay) {
 			BV.show(playlist.sort(function() { return 0.5 - Math.random() }), { ambient:true });
 		} else {
-			BV.show('/img/background-dark.jpg');
+			BV.show('/img/background.jpg');
 		}
 	}
 	
