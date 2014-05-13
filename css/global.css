@@ -73,6 +73,17 @@ h1, h2, h3, h4, h5 {
 }
 
 .shows {
+	position:relative;
+	width:100%;
+	overflow:hidden;
+}
+
+.shows-wrapper {
+	margin:-35px -140px 0 -20px;
+}
+
+/*
+.shows {
 	width:100%;
 	font-size:12px;
 	border-collapse:collapse;
@@ -89,3 +100,4 @@ h1, h2, h3, h4, h5 {
 .shows th, .shows td {
 	text-align:left;
 }
+*/
