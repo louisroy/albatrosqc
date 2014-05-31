@@ -68,6 +68,7 @@ var App = (function()  {
 			$source.attr('src', playlist.sort(function() { return 0.5 - Math.random() }).pop());
 		
 		if (autoplay) {
+			$('.background').addClass('playing');
 			$('.background video').append($source);
 			
 			$(window).on('resize', onWindowResize).trigger('resize');
