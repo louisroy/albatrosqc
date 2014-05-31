@@ -48,7 +48,17 @@ var App = (function()  {
 			'videos/3.mp4',
 			'videos/4.mp4'
 		];
-
+		
+		var $video = $('<video></video>');
+			$video.attr('autoplay', true);
+			$video.attr('controls', false);
+		
+		var $source = $('<source />');
+			$source.attr('src', playlist.sort(function() { return 0.5 - Math.random() }).pop());
+		
+		$('.background video').append($source)
+		
+		/*
 		var BV = new $.BigVideo();
 		BV.init();
 
@@ -57,6 +67,8 @@ var App = (function()  {
 		} else {
 			BV.show('/img/background.jpg');
 		}
+		
+		*/
 	}
 	
 	var construct = (function(ev) {		
