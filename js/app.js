@@ -39,6 +39,20 @@ var App = (function()  {
 		console.log('App loaded.');
 	}
 	
+	var onWindowResize = function(ev) {
+		if ($(window).width() / $(window).height() > 16 / 9) {
+			$('.background video').attr({
+				width:'100%',
+				height:null
+			});
+		} else {
+			$('.background video').attr({
+				height:'100%',
+				width:null
+			});
+		}
+	}
+	
 	var initialize = function() {
 		console.log('App initialized.');
 		
@@ -48,14 +62,15 @@ var App = (function()  {
 			'videos/3.mp4',
 			'videos/4.mp4'
 		];
-
-		var BV = new $.BigVideo();
-		BV.init();
-
+		
+		var $source = $('<source />');
+			$source.attr('src', playlist.sort(function() { return 0.5 - Math.random() }).pop());
+		
 		if (autoplay) {
-			BV.show(playlist.sort(function() { return 0.5 - Math.random() }), { ambient:true });
-		} else {
-			BV.show('/img/background.jpg');
+			$('.background').addClass('playing');
+			$('.background video').append($source);
+			
+			$(window).on('resize', onWindowResize).trigger('resize');
 		}
 	}
 	

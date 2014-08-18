@@ -1,3 +1,4 @@
+<!doctype html>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -33,18 +34,17 @@
 		
 		<!-- App stylesheets -->
 		<link rel="stylesheet" type="text/css" href="css/global.css">
-		
-		<!-- Third-party libraries -->
-		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/videojs/4.5.1/video-js.min.css">
-		<link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/dfcb/BigVideo.js/master/css/bigvideo.css">
-		
-		<!-- Feature detection -->
-		<script src="//cdn.jsdelivr.net/modernizr/2.7.1/modernizr.min.js"></script>
 	</head>
 	<body>
+		<div class="background">
+			<video loop muted autoplay width="100%" poster="img/background.jpg"></video>
+		</div>
+		
 		<div class="content">
 			<h1><img class="logo" src="img/logo.png" alt="Albatros"></h1>
 			
+			<h2><img class="flyer" src="img/flyer.jpg" alt="Canadian Fall 2014 Tour"></h2>
+
 			<h2>Music</h2>
 			
 			<iframe style="border: 0; width: 100%; height: 439px;" src="http://bandcamp.com/EmbeddedPlayer/album=1992716933/size=large/bgcol=000000/linkcol=B89F77/artwork=small/transparent=true/" seamless><a href="http://albatrosqc.bandcamp.com/album/procrastination-iiv">Procrastination IIV by ALBATROS</a></iframe>
@@ -59,9 +59,7 @@
 					<script src="//widget.songkick.com/widget.js"></script>
 				</div>
 			</div>
-			
-			<p>Fall 2014 Canadian tour dates coming soon.</p>
-			
+						
 			<h2>Merch</h2>
 
 			<p><a href="http://lemortrecords.blogspot.ca/">Le Mort Records</a></p>
@@ -76,8 +74,7 @@
 		</div>
 		
 		<!-- Third-party libraries -->
-		<script src="//cdn.jsdelivr.net/g/jquery@1.11.0,jquery.ui@1.10.4(jquery-ui.min.js+jquery.ui.slider.min.js),imagesloaded@3.0.4(imagesloaded.pkgd.js),videojs@4.3"></script>
-		<script src="//cdn.rawgit.com/dfcb/BigVideo.js/master/lib/bigvideo.js"></script>
+		<script src="//zeptojs.com/zepto.min.js"></script>
 		<script src="//squaresend.com/squaresend.js"></script>
 		<script>sqs_title = "Contact"</script>
 		
