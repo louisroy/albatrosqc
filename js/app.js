@@ -40,6 +40,7 @@ var App = (function()  {
 	}
 	
 	var onWindowResize = function(ev) {
+		/*
 		if ($(window).width() / $(window).height() > 16 / 9) {
 			$('.background video').attr({
 				width:'100%',
@@ -51,6 +52,7 @@ var App = (function()  {
 				width:null
 			});
 		}
+		*/
 	}
 	
 	var initialize = function() {
