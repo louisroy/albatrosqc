@@ -33,11 +33,11 @@ var App = (function()  {
 				initialize();
 			}
 		}, 1000);
-	}
+	};
 	
 	var onAppLoaded = function(ev) {
 		console.log('App loaded.');
-	}
+	};
 	
 	var onWindowResize = function(ev) {
 		if ($(window).width() / $(window).height() > 16 / 9) {
@@ -51,7 +51,7 @@ var App = (function()  {
 				width:null
 			});
 		}
-	}
+	};
 	
 	var initialize = function() {
 		console.log('App initialized.');
@@ -72,7 +72,7 @@ var App = (function()  {
 			
 			$(window).on('resize', onWindowResize).trigger('resize');
 		}
-	}
+	};
 	
 	var construct = (function(ev) {		
 		$(document).ready(onAppReady);
