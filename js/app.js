@@ -40,7 +40,7 @@ var App = (function()  {
 	};
 	
 	var onWindowResize = function(ev) {
-		if ($(window).width() / $(window).height() > 16 / 9) {
+		if ($(window).width() / $(window).height() > 1 / 1) {
 			$('.background video').attr({
 				width:'100%',
 				height:null
@@ -57,10 +57,13 @@ var App = (function()  {
 		console.log('App initialized.');
 		
 		var playlist = [
+			'videos/houle.mp4',
+			/*
 			'videos/1.mp4',
 			'videos/2.mp4',
 			'videos/3.mp4',
 			'videos/4.mp4'
+			*/
 		];
 		
 		var $source = $('<source />');
