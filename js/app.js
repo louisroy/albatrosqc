@@ -68,7 +68,7 @@ var App = (function()  {
 		
 		if (autoplay) {
 			$('.background').addClass('playing');
-			$('.background video').append($source);
+			$('.background video').show().append($source);
 			
 			$(window).on('resize', onWindowResize).trigger('resize');
 		}
