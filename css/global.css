@@ -26,6 +26,12 @@ body {
 	height:100%;
 }
 
+@media screen and (orientation:portrait) {
+	body {
+		background-size:contain;
+	}
+}
+
 
 iframe[seamless]{
     background-color: transparent;
