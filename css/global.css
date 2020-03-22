@@ -183,6 +183,10 @@ video {
 	z-index:2;
 }
 
+.no-shows .content {
+	max-width:660px;
+}
+
 .content:after {
 	content: " ";
 	visibility: hidden;
@@ -197,6 +201,14 @@ video {
 	padding:0 6px;
 }
 
+.no-shows .col {
+	width:50%;
+}
+
+.no-shows .col-shows {
+	display:none;
+}
+
 .col:first-child {
 	padding-left:12px;
 }
@@ -206,7 +218,7 @@ video {
 }
 
 @media (max-width: 768px) {
-	.col {
+	.col, .no-shows .col {
 		width:100%;
 		max-width:400px;
 		margin:0 auto;
@@ -263,17 +275,14 @@ video {
 	margin:-35px -200px 0 -20px;
 }
 
-
 .fixed-ratio-bandcamp {
 	position:relative;
 	width: 100%;
 	padding-bottom:154%;
 }
 
-
 .fixed-ratio-bandcamp *:first-child {
 	position:absolute;
 	width:100%;
 	height:100%;
-
 }
