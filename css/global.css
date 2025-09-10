@@ -41,13 +41,13 @@ iframe[seamless]{
 }
 
 a {
-	color:#B89F77;
+	color:#cfcec9;
 	font-weight:bold;
 	text-decoration:none;
 }
 
 a:hover {
-	color: #a48e6a;
+	color: #e5e5e4;
 	text-decoration:underline;
 	transition:color 0.25s ease-out;
 }
@@ -145,7 +145,6 @@ video {
 .contact ul li a {
 	font-size:18px;
 	font-weight:normal;
-	opacity:0.5;
 	color:#333;
 	display:block;
 	padding:5px;
@@ -165,7 +164,7 @@ video {
 }
 
 .contact ul li a:hover {
-	opacity:1;
+	opacity:0.75;
 }
 
 .player {
